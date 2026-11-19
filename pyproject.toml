@@ -1,0 +1,16 @@
+# 单独构建工作台共用的终端呈现包。文件说明见 doc/files/util/lib/python/vecorge-console/pyproject.toml.md。
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vecorge-console"
+version = "0.3.0"
+description = "Terminal status, progress and reports for command-line tools"
+requires-python = ">=3.11"
+
+[tool.setuptools]
+packages = ["vecorge_console"]
+
+[tool.setuptools.package-dir]
+vecorge_console = "src"
