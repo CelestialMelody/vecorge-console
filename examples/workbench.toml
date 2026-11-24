@@ -1,0 +1,4 @@
+# 工作台示例的报告样式覆盖。其它字段使用库的默认值。
+[report]
+muted = "muted"
+column_header = "muted"
