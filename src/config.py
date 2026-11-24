@@ -1,7 +1,6 @@
-"""从库内默认值与调用方提供的 TOML 生成终端配置。
+"""将内置默认值和可选的 TOML 覆盖解析为显示参数与样式。
 
-供 Config.load(path) 使用。文件说明见
-doc/files/util/lib/python/vecorge-console/src/config.py.md。
+文件说明见 doc/mirror/src/config.py.md。
 """
 
 from collections.abc import Mapping

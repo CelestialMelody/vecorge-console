@@ -1,6 +1,6 @@
 """把调用者准备的上下文、表格和说明排成终端与文本共用的报告。
 
-文件说明见 doc/files/util/lib/python/vecorge-console/src/report.py.md。
+文件说明见 doc/mirror/src/report.py.md。
 """
 
 from dataclasses import dataclass

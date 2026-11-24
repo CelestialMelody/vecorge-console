@@ -1,6 +1,6 @@
-"""共享终端库公开入口，状态与进度通过 Console 调用。
+"""导出终端、配置、报告和 ANSI 文本过滤接口。
 
-文件说明见 doc/files/util/lib/python/vecorge-console/src/__init__.py.md。
+文件说明见 doc/mirror/src/__init__.py.md。
 """
 
 from ._text import AnsiFilter

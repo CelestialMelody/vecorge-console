@@ -1,6 +1,6 @@
-"""等待、计数、排版、刷新与退出清理，入口为 Console.progress()。
+"""实现 Console.progress() 的单行等待、计数进度和刷新。
 
-文件说明见 doc/files/util/lib/python/vecorge-console/src/progress.py.md。
+文件说明见 doc/mirror/src/progress.py.md。
 """
 
 from contextlib import contextmanager

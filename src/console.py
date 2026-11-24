@@ -1,6 +1,6 @@
-"""状态、错误详情、文本与报告的公共输出入口。
+"""协调状态、错误详情、文本、报告和单行进度的输出。
 
-文件说明见 doc/files/util/lib/python/vecorge-console/src/console.py.md。
+文件说明见 doc/mirror/src/console.py.md。
 """
 
 import os

@@ -1,6 +1,6 @@
-"""呈现层内共用的纯文本、样式与终端列宽处理。
+"""提供 ANSI 控制序列过滤、终端列宽计算和样式应用。
 
-文件说明见 doc/files/util/lib/python/vecorge-console/src/_text.py.md。
+文件说明见 doc/mirror/src/_text.py.md。
 """
 
 import os
