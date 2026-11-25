@@ -28,7 +28,7 @@
 - 在已安装本库的 Python 环境中，从仓库根目录运行演示，即可看到这些字符在同一行更新[^demo]。
 
 ```bash
-python examples/demo.py progress
+.venv/bin/python example/demo.py progress
 ```
 
 ## 总量与完成数
@@ -57,4 +57,4 @@ with Console().progress("Preparing tasks", delay_seconds=0) as progress:
 [^source]: [计数边界、帧布局与进度上下文](../../../src/progress.py)
 [^console]: [进度启用、输出流与普通文本协调](../../../src/console.py)
 [^defaults]: [进度默认值](../../../src/config.py)
-[^demo]: [从等待切换到三个样本的进度演示](../../../examples/demo.py)
+[^demo]: [从等待切换到三个样本的进度演示](../../../example/demo.py)

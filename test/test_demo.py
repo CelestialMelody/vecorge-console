@@ -16,7 +16,7 @@ import unittest
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DEMO = ROOT / "examples/demo.py"
+DEMO = ROOT / "example/demo.py"
 ERASE_LINE = b"\r\x1b[2K"
 COLOR = re.compile(rb"\x1b\[[0-9;]*m")
 
@@ -62,7 +62,7 @@ class RedirectedDemoTests(unittest.TestCase):
         self.assertEqual([int(line) for line in shown], [*range(1, 21), *range(26, 46)])
 
     def test_failure_uses_the_selected_exit_code(self):
-        example = ROOT / "examples/exit-codes.toml"
+        example = ROOT / "example/exit-codes.toml"
         result = redirected("failure", "--exit-codes", str(example))
         self.assertEqual(result.returncode, 17, result.stderr.decode("utf-8"))
         self.assertEqual(result.stdout, b"")
@@ -96,7 +96,7 @@ class RedirectedDemoTests(unittest.TestCase):
             config.write_text("[display]\nverbose = true\n", encoding="utf-8")
             result = redirected("status", "--config", str(config))
         self.assertEqual(result.returncode, 0, result.stderr.decode("utf-8"))
-        example = Path("examples/output/validation/long-task-name/verification-report.txt")
+        example = Path("example/output/validation/long-task-name/verification-report.txt")
         self.assertIn(f"[INFO] report   {example}\n".encode(), result.stdout)
         self.assertIn(f"Example report path: {ROOT / example}\n".encode(), result.stdout)
 

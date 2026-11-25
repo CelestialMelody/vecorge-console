@@ -13,16 +13,10 @@ vecorge_console = "src"
 
 ## 安装与检查
 
-- 激活 Python 虚拟环境后，在仓库根目录执行安装。
+- 从仓库根目录[创建项目环境并安装](../integration.md#体验)。再用 `.venv/bin/python` 检查导入，终端应显示以 `[OK]` 开始的状态行。
 
 ```bash
-python -m pip install .
-```
-
-- 安装完成后运行下例。终端应显示以 `[OK]` 开始的状态行。
-
-```bash
-python -c 'from vecorge_console import Console; Console().status("ok", "check", "package")'
+.venv/bin/python -c 'from vecorge_console import Console; Console().status("ok", "check", "package")'
 ```
 
 ## 参考资料

@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def show_status(console):
-    report = ROOT / "examples/output/validation/long-task-name/verification-report.txt"
+    report = ROOT / "example/output/validation/long-task-name/verification-report.txt"
     console.status("ok", "build", "example")
     console.status("info", "report", console.path(report))
     console.detail(f"Example report path: {report}\n")
